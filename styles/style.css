@@ -12,6 +12,40 @@ html {
           box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
+footer {
+  color: white;
+  font-size: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social p {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
 body {
   padding: 5% 10%;
   background: #131416;
@@ -61,7 +95,7 @@ body .feed .card {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
 body .feed .card:hover {
@@ -112,12 +146,18 @@ body .feed .card:nth-child(8) {
   background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, 0.7) 100%), url("../img/image-5.jpg");
 }
 
-body .card:nth-child(1), body :nth-child(5), body :nth-child(7) {
+body .card:nth-child(1),
+body :nth-child(5),
+body :nth-child(7) {
   -ms-grid-column: span 6;
       grid-column-start: span 6;
 }
 
-body .card:nth-child(2), body :nth-child(3), body :nth-child(4), body :nth-child(6), body :nth-child(8) {
+body .card:nth-child(2),
+body :nth-child(3),
+body :nth-child(4),
+body :nth-child(6),
+body :nth-child(8) {
   -ms-grid-column: span 3;
       grid-column-start: span 3;
 }
@@ -147,6 +187,24 @@ body .card:nth-child(2), body :nth-child(3), body :nth-child(4), body :nth-child
   body .card:nth-child(n) {
     -ms-grid-column: span 12;
         grid-column-start: span 12;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .social p {
+    margin: 10px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
