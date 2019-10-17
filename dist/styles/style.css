@@ -117,8 +117,8 @@ body .feed .card:nth-child(2) {
 }
 
 body .feed .card:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 10, 10, 0)), color-stop(50%, rgba(10, 10, 10, 0)), to(rgba(10, 10, 10, 0.7))), url("../img/oteri.jpg");
-  background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, 0.7) 100%), url("../img/oteri.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 10, 10, 0)), color-stop(50%, rgba(10, 10, 10, 0)), to(rgba(10, 10, 10, 0.7))), url("../img/oteri.JPG");
+  background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, 0) 50%, rgba(10, 10, 10, 0.7) 100%), url("../img/oteri.JPG");
 }
 
 body .feed .card:nth-child(4) {
